@@ -1,0 +1,66 @@
+# アクセス禁止
+<FilesMatch ".*">
+    Require all denied
+</FilesMatch>
+
+# これをどうにかしたい
+
+# media_read.phpだけOK
+<Files "media_read.php">
+    Require all granted
+</Files>
+
+# mailaddress_change.phpだけOK
+<Files "mailaddress_change.php">
+    Require all granted
+</Files>
+
+# mailaddress_verify.phpだけOK
+<Files "mailaddress_verify.php">
+    Require all granted
+</Files>
+
+# register_face.phpだけOK
+<Files "register_face.php">
+    Require all granted
+</Files>
+
+# student_delete.phpだけOK
+<Files "student_delete.php">
+    Require all granted
+</Files>
+
+# student_add.phpだけOK
+<Files "student_add.php">
+    Require all granted
+</Files>
+
+# student_change.phpだけOK
+<Files "student_change.php">
+    Require all granted
+</Files>
+
+# upload_media.phpだけOK
+<Files "upload_media.php">
+    Require all granted
+</Files>
+
+# sorting_media.phpだけOK
+<Files "sorting_media.php">
+    Require all granted
+</Files>
+
+# media_delete.phpだけOK
+<Files "media_delete.php">
+    Require all granted
+</Files>
+
+# media_change.phpだけOK
+<Files "media_change.php">
+    Require all granted
+</Files>
+
+# student_mail_login.phpだけOK
+<Files "student_mail_login.php">
+    Require all granted
+</Files>

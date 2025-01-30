@@ -124,13 +124,14 @@ MySQLのデータベースを立ち上げ後次のSQLを実行してテーブル
 
 ```
 CREATE TABLE `students` (
-  `id` INT(5) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `name` TEXT NOT NULL,
-  `face` LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
-  `mailaddress` TEXT DEFAULT NULL,
-  `created` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  UNIQUE KEY `mailaddress` (`mailaddress`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `id` int(5) NOT NULL,
+  `name` text NOT NULL,
+  `face` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `mailaddress` text DEFAULT NULL,
+  `created` timestamp NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `mailaddress` (`mailaddress`) USING HASH
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 ```
 
 #### テーブル名`photos`を作成
@@ -336,4 +337,6 @@ E-Mail：contact@nami-shiro.ed.jp
 
 これにて完了です。お疲れ様でした！！！！
 
-## ライセンスについて
+## Copyright
+
+```Copyright (C) 2025 YukiShima```

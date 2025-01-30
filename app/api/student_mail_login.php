@@ -179,6 +179,8 @@ $school_name = $config["school_name"];
 $school_tel = $config["school_tel"];
 $school_email = $config["school_email"];
 
+$domain = $config["domain"];
+
 // ログの文字化け対策
 mb_language("uni");
 mb_internal_encoding("UTF-8");
@@ -215,7 +217,7 @@ try {
 
 - - - - -
 URL:
-https://mi.syumikun.com/login/verify/?token={$token}
+https://{$domain}/login/verify/?token={$token}
 - - - - -
 
 ▼ 注意事項 ▲

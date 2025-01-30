@@ -336,4 +336,6 @@ E-Mail：contact@nami-shiro.ed.jp
 
 これにて完了です。お疲れ様でした！！！！
 
-## ライセンスについて
+## Copyright
+
+```Copyright (C) 2025 YukiShima```

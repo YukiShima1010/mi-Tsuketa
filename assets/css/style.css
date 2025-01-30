@@ -1,0 +1,486 @@
+@charset "utf-8";
+
+/* フォント */
+
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap");
+
+/* 基本 */
+
+body {
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: lightseagreen;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ヘッダー */
+
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-weight: bold;
+    color: #188681;
+}
+
+.desktop-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-color: transparent;
+    color: #188681;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #188681;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-button:hover {
+    background-color: #188681;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+    min-width: 160px;
+    border: 1px solid #188681;
+}
+
+.dropdown-content a {
+    color: #188681;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #188681;
+    color: white;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #188681;
+    border-radius: 2px;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding-top: 20px;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu li {
+    margin: 15px 0;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: #188681;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.side-menu a:hover {
+    background-color: #188681;
+    color: white;
+}
+
+.side-menu.open {
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+/* フッター */
+
+footer {
+    background-color: rgb(24, 134, 129);
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+}
+
+/* コンテンツ */
+
+.content {
+    min-height: calc(100vh - 155.5px);
+}
+
+/* コンテナ */
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* ギャラリー */
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-div {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* モーダル */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.modal-img {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+}
+
+.modal-frame {
+    margin-top: 20px;
+    background-color: #00000050;
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.modal-frame p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin: 0 0 10px;
+}
+
+.modal-caption {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.modal-dl-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.modal-dl-btn:hover {
+    background-color: #ffffff50;
+}
+
+/* ページネーション */
+
+.pagination {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.pagination a {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    background-color: white;
+    text-decoration: none;
+    color: #188681;
+    cursor: pointer;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination a.active {
+    background-color: rgb(24, 134, 129);
+    color: white;
+    border-color: rgb(24, 134, 129);
+}
+
+.pagination span {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    background-color: white;
+    color: #ccc;
+}
+
+/* 操作コンテナ */
+
+.operation {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.operation form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.operation select,
+.operation button {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.operation button {
+    background-color: rgb(24, 134, 129);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.operation button:hover {
+    background-color: rgb(24, 100, 100);
+}
+
+/* テーブル */
+
+.table-div {
+    overflow: auto;
+}
+
+.table-div table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    min-width: 750px;
+}
+
+.table-div th, .table-div td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.table-div .empty {
+    background-color: transparent;
+    color: rgb(24, 134, 129);
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid rgb(24, 134, 129);
+    padding: 3px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.table-div .empty:hover {
+    background-color: rgb(24, 134, 129);
+    color: white;
+}
+
+.table-div .fill {
+    background-color: transparent;
+    color: white;
+    background-color: rgb(24, 134, 129);
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid rgb(24, 120, 115);;
+    padding: 3px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.table-div .fill:hover {
+    background-color: white;
+    color: rgb(24, 134, 129);
+}
+
+/* フォーム */
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form input {
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 500;
+    font-style: normal;
+    flex: 1;
+    height: 42px;
+    padding: 0 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    min-width: 100px;
+}
+
+form button {
+    height: 42px;
+    background-color: #188681;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #188681;
+    padding: 0 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+form button:hover {
+    background-color: rgb(24, 100, 100);
+}
+
+/* パスキーボタン */
+
+.passkey-button {
+    background-color: transparent;
+    color: #188681;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #188681;
+    padding: 8px 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.passkey-button:hover {
+    background-color: #188681;
+    color: white;
+}

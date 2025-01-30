@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+/* フォント */
+
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap");
+
+/* 基本 */
+
+body {
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: lightseagreen;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
+    margin: 20px 0;
+    width: 100%;
+    opacity: 0.8;
+}
+
+/* ヘッダー */
+
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-weight: bold;
+    color: #188681;
+}
+
+/* フッター */
+
+footer {
+    background-color: rgb(24, 134, 129);
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+}
+
+/* ログイン */
+
+.content {
+    background: linear-gradient(180deg, #72b368, rgb(24, 134, 129));
+    font-weight: 700;
+    color: #fff;
+    height: calc(100vh - 130px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    width: 70%;
+    max-width: 400px;
+}
+
+.container h1 {
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    font-size: 24px;
+}
+
+.container label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: block;
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.container input {
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 700;
+    padding: 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.container input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.container input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.container button {
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 5px;
+    color: #72b368;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.container p {
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.container a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* エラーメッセージ */
+
+.error {
+    background-color: #ffcccc;
+    color: #cc0000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 20px;
+    max-width: 400px;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+}

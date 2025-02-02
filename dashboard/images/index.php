@@ -138,8 +138,8 @@ try {
                         <option value="2">選択以外</option>
                     </select>
 
-                    <button type="submit" onclick="studentChange()"><i class="fa-solid fa-rotate-right" style="color: #ffffff;"></i> 生徒を変更</button>
-                    <div><button type="submit" onclick="studentDelete()"><i class="fa-solid fa-trash" style="color: #ffffff;"></i> 生徒を削除</button></div>
+                    <button type="submit" onclick="studentChange()"><i class="fa-solid fa-rotate-right" style="color: #ffffff;"></i> 情報を変更</button>
+                    <div><button type="submit" onclick="studentDelete()"><i class="fa-solid fa-trash" style="color: #ffffff;"></i> 画像を削除</button></div>
                     <div><button type="submit" onclick="location.href = 'https://<?php echo $config["domain"]; ?>/dashboard/upload/';"><i class="fa-solid fa-cloud-arrow-up" style="color: #ffffff;"></i> アップロード</button></div>
                     <div><button type="submit" onclick="location.href = 'https://<?php echo $config["domain"]; ?>/dashboard/sorting/';"><i class="fa-solid fa-gifts" style="color: #ffffff;"></i> 写真振り分け</button></div>
                 </div>

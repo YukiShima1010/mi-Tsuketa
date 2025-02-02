@@ -84,7 +84,7 @@ async function studentDelete() {
     }
 
     // ひたすらに確認する
-    if (window.confirm("写真を削除すると、再度アップロードするまで画像は戻りません。\n↓ 「今一度、削除する生徒を確認してください」 ↓\n" + selectedImagesList)) {
+    if (window.confirm("写真を削除すると、再度アップロードするまで画像は戻りません。\n↓ 「今一度、削除する写真を確認してください」 ↓\n" + selectedImagesList)) {
         // 削除APIにPOSTする
         var response = await fetch("https://" + domain + "/app/api/media_delete.php", {
             method: "POST",

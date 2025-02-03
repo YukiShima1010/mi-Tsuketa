@@ -56,24 +56,26 @@
 ※1 今後実装予定です
 
 
-## デモについて
+## 使用技術
 
-みーつけたでは<ins>**学園関係者限定で**実際に動作させることができるデモを解放しております</ins>。
+### フロントエンド
 
-ですが、デモが必要と聞いて数時間で作ったので、README作成現在で同時使用は1つ、1回2時間程度しかご利用いただけません。
+**[Font Awesome](https://fontawesome.com/)**：`6.7.2`
 
-今後デモの個数を増やす予定なので、少々お待ちいただけますと幸いです。
+### バックエンド
 
-→ → https://mi.syumikun.com/mission/ ← ←
+**PHP**：`8.3`
 
-使用中にご不明な点がございましたらREADMEの利用方法(絶賛準備中)を確認するか、Slack@ユキシマまでご連絡ください。
+### データベース
 
-> 学園関係者以外の方はMisskey.ioにメルアド教えて♡とダイレクトノートしていただけますと幸いです。
+**MySQL(MariaDB)**：`10.6`
 
+### ライブラリ
 
-## 利用方法
+**[face-api.js](https://github.com/justadudewhohacks/face-api.js)**：`0.22.0`
 
-`現在準備中です！ごめんなさい`
+**[PHPMailer](https://github.com/PHPMailer/PHPMailer)**：`6.9.3`
+
 
 ## 動作確認環境
 
@@ -92,26 +94,37 @@ MySQL(MariaDB)：`10.6`
 > iOS(iPhone/iPad)はSafariでのみPWAを利用できます。
 
 - MacOS 15 / Safari
-- MacOS 15 / Safari
+- MacOS 15 / Google Chrome
 - iOS 18 / Safari
 
-## LICENSE | ライセンス
 
-### [face-api.js](https://github.com/justadudewhohacks/face-api.js)
+## 使い方ガイド
 
-Ver.0.22.0
+`現在準備中です！ごめんなさい`
 
-MIT License
 
-```Copyright (c) 2018 Vincent Mühler```
+## デモについて
 
-### [PHPMailer](https://github.com/PHPMailer/PHPMailer)
+みーつけたでは**学園関係者限定で**<ins>実際に動作させることができるデモ環境</ins>を解放しております。
 
-Ver.6.9.3
+**https://mi.syumikun.com/mission/**
 
-LGPL-2.1 License
+#### ご利用前の注意点
 
-```Copyright (C) 1991, 1999 Free Software Foundation, Inc.```
+- 構造上1つのデモ環境につき一つのサブドメインと一つのデータベースを占有するため、個数と利用時間に制限があります。
+- <ins>学園専用メールアドレス(ac/ed/n-jr)でメール認証を行なってください</ins>。
+- デモ版には**法律**、**公序良俗に反するデータ**、特に**年齢制限がある**、**著作権**や**肖像権**などに違反してしまうファイル類を<ins>**絶対に**アップロードしないでください</ins>。
+- 同時に利用できるデモ環境の個数は「**2個**」です。
+- 利用終了後、アップロードされたファイルなどのすべてのデータがリセットされます。
+
+#### その他
+
+みーつけたでは色々な方に幅広くご利用いただくため、1回の利用時間を<ins>「**2時間**」に制限しております</ins>。
+
+混雑している際は譲り合ってご利用いただきますよう、お願い申し上げます。
+
+また、ご利用中にご質問、不具合、バグ、脆弱性などを発見された場合は下記連絡先までご連絡ください。
+`Slack：@ユキシマ`
 
 
 ## 導入方法
@@ -356,6 +369,25 @@ E-Mail：contact@nami-shiro.ed.jp
 
 これにて完了です。お疲れ様でした！！！！
 
-## Copyright
+## LICENSE | ライセンス
+
+### [face-api.js](https://github.com/justadudewhohacks/face-api.js)
+
+Ver.0.22.0
+
+MIT License
+
+```Copyright (c) 2018 Vincent Mühler```
+
+### [PHPMailer](https://github.com/PHPMailer/PHPMailer)
+
+Ver.6.9.3
+
+LGPL-2.1 License
+
+```Copyright (C) 1991, 1999 Free Software Foundation, Inc.```
+
+
+## Copyright | コピーライト
 
 ```Copyright (C) 2025 YukiShima```

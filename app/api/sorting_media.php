@@ -46,8 +46,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    // var_dump($post_data);
-
     // 更新処理
     foreach ($post_data as $id => $faces) {
         $sql = "UPDATE photos SET detection = :detection WHERE id = :id";

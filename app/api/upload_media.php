@@ -60,10 +60,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $jsonExpressions = json_encode($expressions);
 
         // ファイルサイズを確認
-        $maxSize = 50 * 1024 * 1024; // 50MB
+        $maxSize = 60 * 1024 * 1024; // 60MB
 
         if ($file["size"] > $maxSize) {
-            // 50MB以上の画像だった場合
+            // 60MB以上の画像だった場合
             $response["status"] = 500;
             $response["error_message"] = "画像の容量が大きすぎます。";
             echo json_encode($response, JSON_PRETTY_PRINT);

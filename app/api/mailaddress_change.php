@@ -100,6 +100,7 @@ $mail = new PHPMailer(true);
 $school_name = $config["school_name"];
 $school_tel = $config["school_tel"];
 $school_email = $config["school_email"];
+$domain = $config["domain"];
 
 // ログの文字化け対策
 mb_language("uni");

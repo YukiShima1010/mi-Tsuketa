@@ -137,7 +137,7 @@ try {
 
 - - - - -
 URL:
-https://mi.syumikun.com/app/api/mailaddress_verify.php/?token={$token}
+https://{$domain}/app/api/mailaddress_verify.php/?token={$token}
 - - - - -
 
 ▼ 注意事項 ▲

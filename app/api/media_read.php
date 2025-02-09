@@ -103,6 +103,7 @@ if (!file_exists($file_path)) {
 }
 
 // ファイル出力
+ob_clean();
 $mime_type = mime_content_type($file_path);
 header("Content-Type: " . $mime_type);
 readfile($file_path);
